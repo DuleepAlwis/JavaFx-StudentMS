@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="399.0" prefWidth="727.0" style="-fx-background-color: #00008B;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.appHub.controllers.LoginController">
+   <children>
+      <TextField fx:id="emailTxt" layoutX="282.0" layoutY="131.0" prefHeight="26.0" prefWidth="226.0" />
+      <Label contentDisplay="CENTER" layoutX="140.0" layoutY="135.0" prefHeight="18.0" prefWidth="66.0" style="-fx-text-fill: white;" text="Email">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="140.0" layoutY="205.0" style="-fx-text-fill: white;" text="Password">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="loginBtn" layoutX="230.0" layoutY="283.0" mnemonicParsing="false" onAction="#loginBtnClicked" text="Login">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="cancelBtn" layoutX="378.0" layoutY="283.0" mnemonicParsing="false" onAction="#cancelBtnClicked" text="Cancel">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="73.0" fitWidth="115.0" layoutX="137.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/school1.jpg" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="passwordTxt" layoutX="282.0" layoutY="205.0" prefHeight="26.0" prefWidth="226.0" />
+      <Label alignment="CENTER" layoutX="189.0" layoutY="41.0" prefHeight="58.0" prefWidth="362.0" style="-fx-text-fill: white;" text="Student Management System">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="forgotPasswordLink" layoutX="231.0" layoutY="343.0" text="Forgot password">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Hyperlink>
+      <Label fx:id="errorLbl" layoutX="105.0" layoutY="248.0" prefHeight="18.0" prefWidth="503.0" style="-fx-text-fill: white;" />
+   </children>
+</AnchorPane>
